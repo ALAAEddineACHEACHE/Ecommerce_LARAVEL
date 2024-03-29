@@ -1,0 +1,137 @@
+:root {
+    --blue: #1e90ff;
+    --gray90: #e5e5e5;
+}
+body {
+    margin: 0;
+}
+/* Header */
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid var(--gray90);
+    margin-right: 50px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 15px 25px;
+}
+@media (max-width: 521px) {
+    .blog-header {
+        flex-direction: column;
+    }
+}
+li {
+    list-style: none;
+}
+#search-form {
+    display: flex;
+    margin-right: 39px;
+}
+
+@media (max-width: 995px) {
+    #search-form {
+        display: none;
+    }
+}
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    margin-right: 50px;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+/* Body */
+
+h1,
+h3,
+h5,
+h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.display-4 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+#newproduct {
+    margin: 10px;
+    width: 200px;
+    height: 230px;
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Pagination */
+
+.w-5 {
+    height: 50px;
+}
+
+.flex-1 {
+    display: none;
+}
+
+/* .blog-post {
+    margin-bottom: 4rem;
+}
+.blog-post-title {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+}
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+} */
+
+/*
+   * Footer
+   */
+.blog-footer {
+    padding: 2.5rem 0;
+    color: var(--blue);
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p {
+    margin-bottom: 0;
+}
+/*images dans la carte*/
+#image-product {
+    width: 200px;
+    height: 200px;
+}
+#gallery-images {
+    width: 60px;
+    height: 60px;
+}
+#image-panier {
+    width: 70px;
+}
